@@ -7,7 +7,7 @@ Software optimization of the DynamicQuantizeLinear operator (https://github.com/
 
   Optimization 3: (a) thread-local storage to avoid thread synchronization on shared data (b) padding to reduce false sharing
 
-  Optimization 4: sequential accesses per thread in place interleaved accesses
+  Optimization 4: replaces the per-thread interleaved accesses to sequential accesses
 
 Use the run.sh script to test and compare the performance the above optimizations
 
